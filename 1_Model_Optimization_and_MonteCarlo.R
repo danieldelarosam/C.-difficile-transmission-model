@@ -273,7 +273,7 @@ summary_and_plot(parameters_df, "R_formula", "Intrinsec Reproduction Number", "R
 
 #S1 Figure
 plot_df <- data.frame(
-  R = parameters_df$R_values,
+  R = parameters_df$R_formula,
   Amplification = model_simulations$Index_equ
 )
 
