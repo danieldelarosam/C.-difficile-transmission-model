@@ -197,7 +197,7 @@ model_simulations[] <- lapply(model_simulations, function(x) as.numeric(as.chara
 model_simulations <- model_simulations %>%
   mutate(
     Incidence = round((dDiagnosed_CDI / dAdmission) * 1000, 2),
-    Index_equ = round((psi_3 * (E_equi + C_equi + K1_equi + K2_equi)) / (lambda * ene), 1)
+    Index_equ = round((psi_3 * (E_equi + C_equi + K1_equi + K2_equi)) / (lambda * ene), 2)
   )
 
 View(model_simulations)
