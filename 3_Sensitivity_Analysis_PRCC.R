@@ -18,7 +18,7 @@ PRCC_analysis_R <- data.frame(
   psi_4 = parameters_df$p_4, ache_1 = parameters_df$h_1, zeta = parameters_df$z,
   equis = parameters_df$x, epsilon = parameters_df$e, ve = parameters_df$v,
   gamma_1 = parameters_df$g_1, sigma_1 = parameters_df$s_1, efe_1 = parameters_df$f_1,
-  R_value = parameters_df$R)
+  R = parameters_df$R_formula)
 
 prcc_results <- epi.prcc(PRCC_analysis_R, sided.test = 2, conf.level = 0.95) %>%
   as.data.frame() %>%
